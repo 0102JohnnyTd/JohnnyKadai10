@@ -14,6 +14,7 @@
 		1CAB3CA4284CA2C00029FEE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CAB3CA3284CA2C00029FEE8 /* Assets.xcassets */; };
 		1CAB3CA7284CA2C00029FEE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CAB3CA5284CA2C00029FEE8 /* LaunchScreen.storyboard */; };
 		1CAB3CB6284DE6440029FEE8 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAB3CB5284DE6440029FEE8 /* CustomTableViewCell.swift */; };
+		1CAB3CB8284DE97D0029FEE8 /* PrefecturesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAB3CB7284DE97D0029FEE8 /* PrefecturesDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1CAB3CA6284CA2C00029FEE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CAB3CA8284CA2C00029FEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CAB3CB5284DE6440029FEE8 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		1CAB3CB7284DE97D0029FEE8 /* PrefecturesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefecturesDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				1CAB3C9A284CA2BD0029FEE8 /* AppDelegate.swift */,
 				1CAB3C9C284CA2BD0029FEE8 /* SceneDelegate.swift */,
 				1CAB3C9E284CA2BD0029FEE8 /* ViewController.swift */,
+				1CAB3CB7284DE97D0029FEE8 /* PrefecturesDataManager.swift */,
 				1CAB3CA0284CA2BD0029FEE8 /* Main.storyboard */,
 				1CAB3CB5284DE6440029FEE8 /* CustomTableViewCell.swift */,
 				1CAB3CA3284CA2C00029FEE8 /* Assets.xcassets */,
@@ -163,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CAB3C9F284CA2BD0029FEE8 /* ViewController.swift in Sources */,
+				1CAB3CB8284DE97D0029FEE8 /* PrefecturesDataManager.swift in Sources */,
 				1CAB3C9B284CA2BD0029FEE8 /* AppDelegate.swift in Sources */,
 				1CAB3C9D284CA2BD0029FEE8 /* SceneDelegate.swift in Sources */,
 				1CAB3CB6284DE6440029FEE8 /* CustomTableViewCell.swift in Sources */,
