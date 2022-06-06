@@ -7,9 +7,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     private let prefecturesDataManager = PrefecturesDataManager()
-    @IBOutlet var tableView: UITableView!
+    @IBOutlet private var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
