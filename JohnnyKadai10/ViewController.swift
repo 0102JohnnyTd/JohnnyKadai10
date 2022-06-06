@@ -25,6 +25,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomTableViewCell
 
+        cell.setUpBackgroundView(row: indexPath.row)
         cell.detailTextLabel?.text = "\(indexPath.row + 1)番目の都道府県です"
         cell.textLabel?.text = prefecturesDataManager.dataArray[indexPath.row]
 
