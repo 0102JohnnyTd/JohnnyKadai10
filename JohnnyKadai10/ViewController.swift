@@ -15,7 +15,6 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
     }
-
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
@@ -24,6 +23,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomTableViewCell
+       let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomTableViewCell
+
+        cell.detailTextLabel?.text = "\(indexPath.row + 1)番目の都道府県です"
+        cell.textLabel?.text = prefecturesDataManager.dataArray[indexPath.row]
+
+        return cell
     }
 }
