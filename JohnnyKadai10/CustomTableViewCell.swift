@@ -8,29 +8,25 @@
 import UIKit
 
 final class CustomTableViewCell: UITableViewCell {
-    private let prefecturesDataManager = PrefecturesDataManager()
-
-    func configure(row: Int) {
-        setUpText(row: row)
+    func configure(row: Int, name: String) {
+        setUpText(row: row, name: name)
         setUpBackgroundView(row: row)
     }
 
-    func setUpText(row: Int) {
+    func setUpText(row: Int, name: String) {
         self.detailTextLabel?.text = "\(row + 1)番目の都道府県です"
-        self.textLabel?.text = prefecturesDataManager.dataArray[row]
+        self.textLabel?.text = name
     }
 
     func setUpBackgroundView(row: Int) {
         backgroundView = UIView()
 
-        switch row % 3 {
-        case 0:
-            backgroundView?.backgroundColor = UIColor(red: 0.7, green: 0, blue: 0, alpha: 0.5)
-        case 1:
-            backgroundView?.backgroundColor = UIColor(red: 0, green: 0.7, blue: 0, alpha: 0.5)
-        case 2 :
-            backgroundView?.backgroundColor = UIColor(red: 0, green: 0, blue: 0.7, alpha: 0.5)
-        default: break
-        }
+        let colors: [UIColor] = [
+            UIColor(red: 0.7, green: 0, blue: 0, alpha: 0.5),
+            UIColor(red: 0, green: 0.7, blue: 0, alpha: 0.5),
+            UIColor(red: 0, green: 0, blue: 0.7, alpha: 0.5)
+        ]
+
+        backgroundView?.backgroundColor = colors[row % colors.count]
     }
 }
