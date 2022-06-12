@@ -15,12 +15,12 @@ final class CustomTableViewCell: UITableViewCell {
         setUpBackgroundView(row: row)
     }
 
-    func setUpText(row: Int) {
+    private func setUpText(row: Int) {
         self.detailTextLabel?.text = "\(row + 1)番目の都道府県です"
         self.textLabel?.text = prefecturesDataManager.dataArray[row]
     }
 
-    func setUpBackgroundView(row: Int) {
+    private func setUpBackgroundView(row: Int) {
         backgroundView = UIView()
 
         switch row % 3 {
