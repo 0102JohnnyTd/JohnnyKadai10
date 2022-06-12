@@ -8,16 +8,14 @@
 import UIKit
 
 final class CustomTableViewCell: UITableViewCell {
-    private let prefecturesDataManager = PrefecturesDataManager()
-
-    func configure(row: Int) {
-        setUpText(row: row)
+    func configure(row: Int, name: String) {
+        setUpText(row: row, name: name)
         setUpBackgroundView(row: row)
     }
 
-    private func setUpText(row: Int) {
+    private func setUpText(row: Int, name: String) {
         self.detailTextLabel?.text = "\(row + 1)番目の都道府県です"
-        self.textLabel?.text = prefecturesDataManager.dataArray[row]
+        self.textLabel?.text = name
     }
 
     private func setUpBackgroundView(row: Int) {
